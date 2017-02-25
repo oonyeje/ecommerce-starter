@@ -16,11 +16,15 @@
  @import "bootstrap";
 
  body {
- 	background-color: black;
+   background-color: black;
+   padding-top: 40px;
  }
 
- nav {
-   &.div {
-     background-color: white;
-   }
+ header {
+     background: white;
+     height: 40px;
+     position: fixed;
+     top: 0;
+     transition: top 0.2s ease-in-out;
+     width: 100%;
  }
