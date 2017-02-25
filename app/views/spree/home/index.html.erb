@@ -1,0 +1,8 @@
+<% @body_id = 'home-page' %>
+
+<div id="main_content" data-hook="homepage_products">
+  <%= stylesheet_link_tag 'main_content', media: 'all' %>
+  <% cache(cache_key_for_products) do %>
+    <%= render template: 'main_content/index', locals: { products: @products } %>
+  <% end %>
+</div>
